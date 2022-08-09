@@ -38,9 +38,9 @@ const ChatService = {
   },
   getChat: async () => {
     const querySnapshot = await getDocs(collection(db, 'chats'));
-    querySnapshot.forEach((doc) => {
-      // console.log(`${doc.id} => ${doc.data()}`);
-      console.log(doc);
+    // console.log(querySnapshot.docs);
+    querySnapshot.docs.forEach((doc) => {
+      console.log(`${doc} => ${doc.data().receiver}`);
     });
   },
 };
