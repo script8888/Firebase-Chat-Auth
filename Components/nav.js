@@ -18,7 +18,7 @@ const Nav = () => {
           </Link>
         </li>
         &nbsp;
-        {user && (
+        {user && loggedIn && (
           <li className="nav-item">
             <Link href={'/profile'} className="nav-link">
               User

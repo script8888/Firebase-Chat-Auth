@@ -1,5 +1,6 @@
 import { StoreProvider, createStore } from 'easy-peasy';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/globals.css';
 import model from '../model';
 import React from 'react';
 import Nav from '../Components/nav';

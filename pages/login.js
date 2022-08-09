@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useStoreState, useStoreActions } from 'easy-peasy';
-import * as Yup from 'yup';
 import { useRouter } from 'next/router';
 import { withPublic } from '../src/hooks/routes';
 import Button from 'react-bootstrap/Button';

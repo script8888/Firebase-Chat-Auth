@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useStoreState, useStoreActions } from 'easy-peasy';
 import { withPublic } from '../src/hooks/routes';
-import * as Yup from 'yup';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
