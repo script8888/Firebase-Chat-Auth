@@ -16,13 +16,6 @@ const auth = {
   setError: action((state, payload) => {
     state.error = payload;
   }),
-  chat: thunk(async (actions, payload) => {
-    const data = await ChatService.sendChat();
-    // return data;
-  }),
-  getChat: thunk(async (actions, payload) => {
-    const data = await ChatService.getChat();
-  }),
   register: thunk(async (actions, payload) => {
     try {
       const data = await AuthService.register(payload.email, payload.password);
